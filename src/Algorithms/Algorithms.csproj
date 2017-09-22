@@ -2,6 +2,27 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <PackageId>Algorithms.Net</PackageId>
+    <PackageVersion>1.0.0</PackageVersion>
+    <Authors>Saad Farooq</Authors>
+    <Description>Data Structures and Algorithms for C#</Description>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageReleaseNotes>Initial release</PackageReleaseNotes>
+    <Copyright>Copyright 2017 (c) Saad Farooq. All rights reserved.</Copyright>
+    <PackageTags>C# DataStructures Algorithms</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageProjectUrl>https://github.com/saad749/Algorithms.Net</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/saad749/Algorithms.Net</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/saad749/Algorithms.Net</RepositoryUrl>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>bin\Debug\netstandard2.0\Algorithms.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <DocumentationFile>bin\Release\netstandard2.0\Algorithms.xml</DocumentationFile>
+    <WarningLevel>1</WarningLevel>
   </PropertyGroup>
 
   <ItemGroup>
